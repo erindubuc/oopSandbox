@@ -13,7 +13,8 @@ namespace Mod1_SelfAssessment
         // Defining properties
         public string StudentName { get; set; }
         public int Id { get; set; }
-        public string Degree { get; set; }
+        public Degree Degree { get; set; }
+        public Course Course { get; set; }
         public static int NumStudents { get; set; }
 
         // Adding a constructor

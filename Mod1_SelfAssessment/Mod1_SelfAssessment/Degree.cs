@@ -8,8 +8,8 @@ namespace Mod1_SelfAssessment
 {
     public class Degree
     {
-        // Defining properties
-        public string Course { get; set; }
+        // Defining properties - course within degree
+        public Course Course { get; set; }
         public string DegreeName { get; set; }
 
         // Adding a constructor

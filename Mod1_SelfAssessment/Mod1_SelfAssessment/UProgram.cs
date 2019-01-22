@@ -11,6 +11,8 @@ namespace Mod1_SelfAssessment
     public class UProgram
     {
         public string ProgramName { get; set; }
+        // Degree for program
+        public Degree Degree { get; set; }
 
         
         // Adding a constructor

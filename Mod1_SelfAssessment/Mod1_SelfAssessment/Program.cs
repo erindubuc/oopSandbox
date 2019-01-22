@@ -10,10 +10,6 @@ namespace Mod1_SelfAssessment
     {
         static void Main(string[] args)
         {
-            // Instantiate UProgram object called IT
-            UProgram uProgram = new UProgram("Information Technology");
-            Console.WriteLine("Added new program: " + uProgram.ProgramName);
-
             // Instantiate 3 Student objects
             //Student student1 = new Student("Harry Potter", 9341);
             //Student student2 = new Student("Ron Weasley", 9342);
@@ -37,21 +33,34 @@ namespace Mod1_SelfAssessment
             Console.WriteLine($"Students enrolled in " + course.CourseName + ": {0}, {1}, and {2}", students[0].StudentName, students[1].StudentName, students[2].StudentName);
 
             // Instantiate at least one Teacher object
-
             // Add that Teacher object to your Course object
+            Teacher teacher = new Teacher("Albus Dumbledore", "Programming with C#");
+            Console.WriteLine("New teacher added: " + teacher.TeacherName + " to teach " + teacher.Course);
 
             // Instantiate a Degree object, such as Bachelor
+            Degree bachDegree = new Degree("Bachelor");
+
 
             // Add your Course object to the Degree object
+            bachDegree.Course = course;
+            Console.WriteLine("The course, " + course.CourseName + " has been added to the " + bachDegree.DegreeName + " program");
 
-            // Instantiate a UProgram object called Information Technology
+            // Instantiate UProgram object called IT
+            UProgram uProgram = new UProgram("Information Technology");
+            Console.WriteLine("Added new program: " + uProgram.ProgramName);
 
             // Add the Degree object to the UProgram object
+            uProgram.Degree = bachDegree;
 
             // Using Console.WriteLine statements, output the following information to the console window:
-                // The name of the program and the degree it contains
-                // The name of the course in the degree
-                // The count of the number of students in the course.
+            // The name of the program and the degree it contains
+            Console.WriteLine("The program " + uProgram.ProgramName + " has a " + bachDegree.DegreeName + " Degree.");
+
+            // The name of the course in the degree
+            Console.WriteLine("The " + bachDegree.DegreeName + " Degree offers the course: " + course.CourseName);
+
+            // The count of the number of students in the course.
+            Console.WriteLine("There are {0} students enrolled.", students[0].AddStudents());
         }
     }
 }
