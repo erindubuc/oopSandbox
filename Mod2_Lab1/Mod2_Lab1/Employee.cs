@@ -8,14 +8,14 @@ namespace Mod2_Lab1
 {
     class Employee
     {
+        // Creates an integer variable called "employeeCount" and assigns value to 1
+        private static int employeeCount = 1;
+
         // 3 private member variables: employeeName, employeeBaseSalary, and employeeId
         private string employeeName;
         private double employeeBaseSalary;
         private int employeeId;
-
-        // Creates an integer variable called "employeeCount" and assigns value to 1
-        private static int employeeCount = 1;
-
+        
         // Public properties
         public string Name
         {
@@ -28,24 +28,6 @@ namespace Mod2_Lab1
             {
                 employeeName = value;
             }
-        }
-
-        // This method returns the employee's ID
-        public int getEmployeeID()
-        {
-            return this.ID;
-        }
-
-        // This method returns the employee's ID and Name
-        public String toString()
-        {
-            return this.ID + " " + this.Name;
-        }
-
-        // This method returns the employee's ID and Name and confirms that the employee is in the system
-        public virtual String employeeStatus()
-        {
-            return toString() + " is in the company's system.";
         }
 
         public double BaseSalary
@@ -94,5 +76,22 @@ namespace Mod2_Lab1
             return this.Name;
         }
 
+        // This method returns the employee's ID
+        public int getEmployeeID()
+        {
+            return this.ID;
+        }
+
+        // This method returns the employee's ID and Name
+        public String toString()
+        {
+            return this.ID + " " + this.Name;
+        }
+
+        // This method returns the employee's ID and Name and confirms that the employee is in the system
+        public virtual String employeeStatus()
+        {
+            return toString() + " is in the company's system.";
+        }
     }
 }
