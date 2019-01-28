@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMethods", "SimpleMethods\SimpleMethods.csproj", "{4321CAFD-1354-4A5B-A0B9-617C9114BC5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4321CAFD-1354-4A5B-A0B9-617C9114BC5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4321CAFD-1354-4A5B-A0B9-617C9114BC5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4321CAFD-1354-4A5B-A0B9-617C9114BC5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4321CAFD-1354-4A5B-A0B9-617C9114BC5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC3D9BC4-94BA-4EF6-9355-EC052634CCE1}
+	EndGlobalSection
+EndGlobal
